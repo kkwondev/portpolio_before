@@ -1,0 +1,127 @@
+
+/* 서브 배너 */
+#wrap > .first {
+    width: 100%;
+    height: 270px;
+    padding-top: 70px;
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top center;
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+}
+#wrap > .first::before {
+    content: '';
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+#wrap > .first > h2 {
+    position: absolute;
+    top:53%;
+    left:50%;
+    transform: translateX(-50%);
+}
+/* 서브 배너 끝 */
+
+/* 콘텐츠 */
+#wrap > .secound {
+    width: 100%;
+    padding:50px 16px;
+    box-sizing: border-box;
+}
+#wrap > .secound> .menu_bar {
+    width: 100%;
+    height: 44px;
+    clear: both;
+}
+#wrap > .secound> .menu_bar > li {
+    width: 50%;
+    height: 44px;
+    line-height: 44px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+#wrap > .secound> .menu_bar > li.on {
+    background-color: #5C3D33;
+    color: #fff;
+}
+#wrap > .secound> .menu_bar > li {
+    color:#5C3D33;
+}
+#wrap > .secound > .contents {
+    display: none;
+}
+#wrap > .secound > .contents.on {
+    display: block;
+}
+#wrap > .secound > .contents >.content {
+    clear: both;
+    margin-bottom: 50px;
+}
+#wrap >.secound>.contents >article > h3 {
+    height: 40px;
+    line-height: 40px;
+    color: #5C3D33;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+#wrap >.secound>.contents >article > h3::before {
+    content: '';
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 8px;
+    height: 40px;
+    background-color: #5C3D33;
+}
+#wrap > .secound > .contents >.content > .content_text {
+    width: 100%;
+}
+#wrap > .secound > .contents >.content > .content_text > h3 {
+    font-family: 'SeoulHangangM'; 
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#wrap > .secound >.contents > .content > .content_text > p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+#wrap > .secound > .contents >.content > .content_text > img{
+    display: block;
+    background-color: #666;
+    width: 100%;
+    max-width: 500px;
+    margin:0 auto;
+}
+
+#wrap > .secound > .contents > .content2 {
+    width: 100%;
+    margin-bottom: 30px;
+} 
+/* #wrap > .secound > .contents >.btn> div {
+    width: 30px;
+    height: 30px;
+    background-color: #5C3D33;
+    color: #fff;
+} */
+#wrap > .secound > .contents > .content2 > img {
+    display: block;
+    margin:0 auto;
+    margin-bottom: 15px;
+}
+#wrap > .secound > .contents > .content2 > p {
+    text-align: center;
+    font-size: 13px;
+}
+
+/* 콘텐츠 끝 */

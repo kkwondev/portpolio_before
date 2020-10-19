@@ -1,0 +1,171 @@
+/* 탭메뉴 */
+.wrap > .section2 > .tab_menu {
+    width: 1100px;
+    margin:0 auto;
+}
+.wrap > .section2 > .tab_menu > ul {
+    width: 1100px;
+    height: 80px;
+    margin-bottom: 100px;
+}
+.wrap > .section2 > .tab_menu > ul > li {
+    width: 33.3%;
+    height: 80px;
+    line-height: 80px;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 20px;
+}
+.wrap > .section2 > .tab_menu > ul > li.on {
+    border-bottom:3px solid #009BD2;
+    color: #009bd2;
+    font-weight: bold;
+}
+
+
+/* 세션2 영역 */
+.wrap > .section2 {
+    width: 100%;
+    height: 2400px;
+    /* padding:100px 0; */
+}
+.wrap > .section2 >.s2_content {
+    display: none;
+}
+.wrap > .section2 >.s2_content.on {
+    display:block;
+}
+.wrap > .section2 >.s2_content> .content1 {
+    clear:both;
+    width: 1100px;
+    margin:0 auto;
+    margin-bottom: 100px;
+}
+.wrap > .section2 >.s2_content> .content1 > img {
+    display: block;
+    margin:0 auto;
+    margin-bottom: 50px;
+}
+.wrap > .section2 >.s2_content> .content1 > .content_text {
+    padding:0 20px;
+    line-height: 25px;
+}
+.wrap > .section2 >.s2_content> .content1 > .content_text > h3 {
+    margin-bottom: 15px;
+}
+.wrap > .section2 >.s2_content> .content2 {
+    width: 100%;
+    height: 643px;
+    background-image: url(../img/content2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.wrap > .section2 >.s2_content> .content2 > .content2_wrap {
+    width: 1100px;
+    height: inherit;
+    margin:0 auto;
+    padding:100px 0;
+    box-sizing: border-box;
+}
+.wrap > .section2 >.s2_content> .content2 > .content2_wrap > h2 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 2px #999;
+    margin-bottom: 50px;
+}
+.wrap > .section2 > .s2_content>.content2 > .content2_wrap > .content2_box {
+    width: 356px;
+    height: 356px;
+    line-height: 356px;
+    border-radius: 35px;
+    float: left;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+}
+.wrap > .section2 > .s2_content>.content2 > .content2_wrap > .content2_box:nth-child(2) {
+    background-image: url(../img/cold1.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+.wrap > .section2 >.s2_content> .content2 > .content2_wrap > .content2_box:nth-child(3) {
+    margin:0 16px;
+    background-image: url(../img/cold2.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wrap > .section2 >.s2_content> .content2 > .content2_wrap > .content2_box:nth-child(4) {
+    background-image: url(../img/cold3.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrap > .section2 >.s2_content> .content3 {
+    width: 100%;
+    padding:150px 0;
+}
+
+.wrap > .section2 >.s2_content> .content3 > .content3_wrap {
+    width: 1100px;
+    margin:0 auto;
+    position: relative;
+}
+.wrap > .section2 > .s2_content>.content3 > .content3_wrap > h2 {
+    text-align: center;
+    color:#009BD2;
+    margin-bottom: 100px;
+}
+.wrap > .section2 >.s2_content> .content3 > .content3_wrap > img {
+    position: absolute;
+    top:-100px;
+    left:160px;
+}
+/* 콘텐츠 3 박스 정의 */
+.wrap > .section2 >.s2_content> .content3 > .content3_wrap > .section3_box {
+    width: 356px;
+    height: 356px;
+    border-radius: 35px;
+    float: left;
+    margin-bottom: 16px;
+}
+
+/* 2번째 5번째 박스 왼쪽오른쪽 마진값 추가 */
+.wrap > .section2 >.s2_content> .content3 > .content3_wrap > .section3_box:nth-of-type(2) {
+    margin:0 16px;
+}
+.wrap > .section2 > .s2_content>.content3 > .content3_wrap > .section3_box:nth-of-type(5) {
+    margin:0 16px;
+}
+
+/* 박스안 구역 설정 */
+.wrap > .section2 > .s2_content>.content3 > .content3_wrap > .section3_box > .box_img {
+    width: 356px;
+    height: 60%;
+}
+.wrap > .section2 >.s2_content> .content3 > .content3_wrap > .section3_box > .box_img > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 35px 35px 0 0;
+}
+.wrap > .section2 >.s2_content> .content3 > .content3_wrap > .section3_box > .box_text {
+    width: 356px;
+    height: 40%;
+    border-radius: 0 0 35px 35px;
+    padding:10px 15px;
+    box-sizing: border-box;
+}
+
+/* 텍스트 설정 */
+.wrap > .section2 >.s2_content> .content3 > .content3_wrap > .section3_box > .box_text > h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.wrap > .section2 > .s2_content>.content3 > .content3_wrap > .section3_box > .box_text > p {
+    font-size: 14px;
+}

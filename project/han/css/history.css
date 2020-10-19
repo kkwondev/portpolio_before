@@ -1,0 +1,115 @@
+#wrap > .first {
+    width: 100%;
+    height: 270px;
+    padding-top: 70px;
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top center;
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+}
+#wrap > .first::before {
+    content: '';
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+#wrap > .first > h2 {
+    position: absolute;
+    top:53%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+#wrap > .content {
+    width: 100%;
+    padding:30px 16px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#wrap > .content > .tab_bar {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+#wrap > .content > .line {
+    width: 100%;
+    height: 1px;
+    background-color: #D1CBC9;
+    position: absolute;
+    top:67px;
+}
+#wrap > .content > .tab_bar > .circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #A6704E;
+    float: left;
+    position: absolute;
+    top:35%;
+    transform: translateY(-35%);
+    line-height: 70px;
+    cursor: pointer;
+}
+#wrap > .content > .tab_bar > .circle.on {
+    background-color: #5C3D33;
+}
+#wrap > .content > .tab_bar > .circle.first {
+    left:12.5%;
+}
+#wrap > .content > .tab_bar > .circle.secound {
+    left:37.5%;
+}
+#wrap > .content > .tab_bar > .circle.third {
+    left:62.5%;
+}
+
+#wrap > .content > .tab_bar > .circle.four {
+    left:87.5%;
+}
+
+#wrap > .content .head {
+    width: 100%;
+    height: 44px;
+    background-color: #5C3D33;
+    color:#fff;
+    text-align: center;
+    line-height: 44px;
+    margin-bottom: 30px;
+}
+#wrap > .content > .body {
+    width: 100%;
+    display: none;
+}
+#wrap > .content > .body.on {
+    display: block;
+}
+#wrap > .content > .body > img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#wrap > .content > .body > h2 {
+    font-size: 24px;
+    color: #5C3D33;
+    margin-bottom: 20px;
+}
+#wrap > .content > .body > p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#wrap > .content > .body> .next {
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+    color: #5C3D33;
+    cursor: pointer;
+}

@@ -1,0 +1,152 @@
+/* 세션2 컨텐츠 영역 */
+.wrap > .section2 {
+    width: 100%;
+    height: 1000px;
+    padding:130px 0;
+    box-sizing: border-box;
+}
+
+.wrap > .section2> .section2_wrap {
+    width: 1100px;
+    margin:0 auto;
+    height: inherit;
+}
+/* 세션2 박스 크기 지정 */
+/* .wrap > .section2> .section2_wrap > div {
+    width: 356px;
+    height: 356px;
+    float: left;
+    margin-bottom: 16px;
+    border-radius: 35px;
+    text-align: center;
+    padding:60px 50px;
+    box-sizing: border-box;
+    color: #fff;
+} */
+.wrap > .section2> .section2_wrap > div {
+   float: left;
+    width: 356px;
+    height: 356px;
+    margin-bottom: 50px;
+}
+.wrap > .section2> .section2_wrap > div > div,
+.wrap > .section2> .section2_wrap > div > a{
+    display: block;
+    width: 356px;
+    height: 356px;
+    border-radius: 35px;
+    text-align: center;
+    padding:60px 50px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.wrap > .section2> .section2_wrap > div > div> img {
+    margin-bottom: 15px;
+}
+.wrap > .section2> .section2_wrap > div > div> p {
+    height: 50px;
+    font-size: 28px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #fff;
+}
+.wrap > .section2> .section2_wrap > div > div> a {
+    margin: 0 10px;
+    width: 100%;
+    height: 100%;
+}
+.wrap > .section2> .section2_wrap > div > div> a > span {
+    color: #fff;
+}
+.wrap > .section2> .section2_wrap > div > a > span:hover {
+    /* color:#0 2749c; */
+    font-weight: bold;
+}
+.wrap > .section2> .section2_wrap >div> div.front {
+    position:absolute;
+	transform: perspective( 600px ) rotateY( 0deg );
+    width:356px; 
+    height:356px; 
+    border-radius: 36px;
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+}
+.wrap > .section2> .section2_wrap >div> a{
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 180deg );
+    width:356px; 
+    height:356px; 
+    border-radius: 36px;
+	backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+    text-align: left;
+    padding:40px 20px;
+    display: block;
+}
+.wrap > .section2> .section2_wrap >div>a.back.blue{
+    background: url(../img/box1_back.png);
+    display: block;
+}
+.wrap > .section2> .section2_wrap >div> a.back.pink{
+    background: url(../img/box2_back.png);
+}
+.wrap > .section2> .section2_wrap >div> a.back.green{
+    background: url(../img/box3_back.png);
+}
+.wrap > .section2> .section2_wrap >div> a.back.red{
+    background: url(../img/box4_back.png);
+}
+.wrap > .section2> .section2_wrap >div> a.back.yellow{
+    background: url(../img/box5_back.png);
+}
+.wrap > .section2> .section2_wrap >div> a.back.gray{
+    background: url(../img/box6_back.png);
+}
+.wrap > .section2> .section2_wrap >div> a.back >span> h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.wrap > .section2> .section2_wrap >div> a.back >span > h3 {
+    margin-bottom: 10px;
+}
+.wrap > .section2> .section2_wrap >div> a.back> span > p {
+    border:none;
+    font-size: 18px;
+    line-height: 30px;
+}
+.wrap > .section2> .section2_wrap >div> a.back>span > h3:last-of-type {
+    margin-bottom: 20px;
+}
+.wrap > .section2> .section2_wrap >div:hover > .front{
+    transform: perspective( 600px ) rotateY( -180deg );
+}
+.wrap > .section2> .section2_wrap >div:hover > .back{
+    transform: perspective( 600px ) rotateY( 0deg );
+}
+/* 박스별 색지정 */
+.wrap > .section2> .section2_wrap >div> div.blue {
+    background-color: #009BD2; 
+}
+.wrap > .section2> .section2_wrap > div>div.pink {
+    background-color: #EE6799;
+}
+.wrap > .section2> .section2_wrap > div>div.yellow {
+    background-color: #FCDF46;
+}
+.wrap > .section2> .section2_wrap > div> div.green {
+    background-color: #6DD13F ;
+}
+.wrap > .section2> .section2_wrap >div> div.red {
+    background-color: #A81C20;
+}
+.wrap > .section2> .section2_wrap > div>div.gray {
+    background-color: #707070;
+}
+
+/* 가운데 박스 왼쪽 오른쪽 마진값 적용 */
+.wrap > .section2> .section2_wrap > div:nth-last-of-type(5) {
+    margin:0 16px;
+}
+.wrap > .section2> .section2_wrap > div:nth-last-of-type(2) {
+    margin:0 16px;
+}

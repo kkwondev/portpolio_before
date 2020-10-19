@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .loadingbox .dim {
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.7);
+}
+.loadingbox .circle {
+    position: fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    height: 40px;
+    border: 10px solid #fff;
+   border-top:10px solid red;
+   border-radius: 50px;
+   animation-name: spincircle;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes spincircle {
+    from {
+        transform:translate(-50%,-50%) rotate(0);
+    }
+    to {
+        transform:translate(-50%,-50%) rotate(360deg);
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="loadingbox">
+        <div class="dim"></div>
+        <div class="circle"></div>
+    </div>
+</body>
+</html>

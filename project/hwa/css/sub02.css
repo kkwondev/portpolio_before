@@ -1,0 +1,71 @@
+.wrap > .section_content {
+    width: 1138px;
+    margin:0 auto;
+    padding: 100px 37px;
+    box-sizing: border-box;
+}
+.wrap > .section_content > .sub2_box1 {
+    width: 100%;
+    height: 485px;
+    margin-bottom: 79px;
+}
+.wrap > .section_content .box1_title {
+    text-align: center;
+    height: 56px;
+    line-height: 56px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #f8b03a;
+}
+.wrap > .section_content > .sub2_box1 > .box1_content > .box {
+    width: 352px;
+    height: 205px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-top: 40px;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.wrap > .section_content > .sub2_box1 > .box1_content > .box:hover {
+    background-color: #fbe4c2;
+    color:#fff;
+}
+
+
+.wrap > .section_content > .sub2_box1 > .box1_content > .box > p {
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding:20px;
+}
+.wrap > .section_content > .sub2_box1 > .box1_content > .box:last-child {
+    margin-right: 0;
+}
+.wrap > .section_content > .sub2_box2 {
+    clear: both;
+}
+.wrap > .section_content > .sub2_box2 > table {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.wrap > .section_content > .sub2_box2 > table th {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #ffdd7c;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.wrap > .section_content > .sub2_box2 > table td {
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.wrap > .section_content > .sub2_box2 > table,th,tr,td {
+    height: 56px;
+    text-align: center;
+}

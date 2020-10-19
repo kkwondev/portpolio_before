@@ -1,0 +1,64 @@
+.wrap > .section_content {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 1138px;
+    margin:0 auto;
+    padding: 50px 37px;
+    box-sizing: border-box;
+}
+.wrap > .section_content > .sub2_box1 {
+    width: 100%;
+    height: 485px;
+    margin-bottom: 79px;
+}
+.wrap > .section_content .box1_title {
+    text-align: center;
+    height: 56px;
+    line-height: 56px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f8b03a;
+}
+.wrap > .section_content > .sub2_box1 {
+    width: 100%;
+    height: 100px;
+    background-color: #f6f4f4;
+    box-sizing: border-box;
+    padding: 28px 23px;
+}
+.wrap > .section_content > .sub2_box1 > form> select,option {
+    width: 254px;
+    height: 44px;
+    outline: none;
+    border: none;
+}
+.wrap > .section_content > .sub2_box1 > form> input {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 244px;
+    height: 44px;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+.wrap > .section_content > .sub2_box1 > form> input[type="button"] {
+    background-color: #f8b03a;
+    border: none;
+    outline: none;
+    color:#fff;
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.sub2_box2 table {
+    width: 100%;
+}
+.sub2_box2 tr,td,th {
+    height: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-weight: 300;
+}
+.sub2_box2 th {
+    color:#ffdd7c;
+}

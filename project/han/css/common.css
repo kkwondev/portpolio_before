@@ -1,0 +1,151 @@
+/* 공통 css */
+.border {
+    background-color: #5C3D33;
+    color: #fff !important;
+}
+/* 초기화, 폰트 설정 */
+* {
+    margin:0;
+    padding:0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+@font-face { 
+    font-family: 'SeoulHangangM'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') 
+    format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+ul {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+/* 초기화, 폰트설정 끝 */
+
+/* 랩 */
+#wrap {
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin:0 auto;
+}
+/* gnb */
+
+.gnb {
+    width: 70%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #fff;
+    position: fixed;
+    top:0;
+    right:-100%;
+    z-index: 999;
+    padding-top: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.gnb > .close {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+}
+.gnb > .logo {
+    clear: both;
+    text-align: center;
+    height: 100px;
+    line-height: 120px;
+    border-bottom: 1px solid #D1CBC9;
+}
+.gnb > .main_menu {
+    padding-top: 20px;
+}
+.gnb > .main_menu > li > a {
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #A6704E;
+    font-size: 20px;
+}
+/* gnb end */
+
+/* 헤더 */
+.header {
+    width: 100%;
+    max-width: 1000px;
+    height: 70px;
+    position: fixed;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    z-index: 998;
+    transition: all .8s;
+}
+
+.header > h1 {
+    padding: 13px 16px;
+    box-sizing: border-box;
+}
+.header > .hambuger_btn {
+    width: 70px;
+    height: 70px;
+    /* background-color: #fff; */
+    position: absolute;
+    top:0;
+    right:0;
+    padding:15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* 헤더 끝 */
+
+/* 풋터 */
+.footer {
+    clear: both;
+    width: 100%;
+    height: 137px;
+    background-color: #D1CBC9;
+    margin:0 auto;
+    padding:20px 16px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.footer > .footer_wrap {
+    width: 375px;
+    margin:0 auto;
+}
+.footer >.footer_wrap> .footer_menu >  span {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    color: #5C3D33;
+    margin-bottom: 20px;
+}
+.footer >.footer_wrap> .footer_menu > span:last-child {
+    margin-right: 0;
+}
+
+.footer >.footer_wrap> .footer_menu > span::after {
+    content: '|';
+    margin-left: 13px;
+}
+.footer >.footer_wrap>.footer_menu >span:last-child::after {
+    content: '';
+    margin-left: 0;
+}
+.footer > .footer_wrap> .copylight {
+    font-size: 11px;
+    color:#fff;
+}
+.footer > .footer_wrap> .copylight > div {
+    margin-bottom: 5px;
+}
+/* 풋터끝 */

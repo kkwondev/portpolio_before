@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>방방곡곡</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/style.js"></script>
+</head>
+<body>
+    <!-- 모달레이어 -->
+    <div class="modal">
+        <div class="modal_inner">
+            <div class="tit">타이틀입니다.</div>
+            <div class="con">내용입니다.</div>
+            <button class="btn">닫기</button>
+        </div>
+    </div>
+    <div class="login">
+        <div class="modal_login">
+        </div>
+        <div class="modal_inner login_modal">
+            <div class="tit">
+              <div class="tit1">로그인</div>
+              <div class="tit2">회원가입</div>
+            </div>
+            <div class="con">
+                <div class="login_con">
+                        <legend class="login_head">휴대폰 | 이메일 아이디 로그인</legend>
+                    <form action="#">
+                        <ul>
+                            <li>
+                                <input type="text" id="user_id" placeholder="이메일 또는 휴대폰 아이디"> 
+                            </li>
+                            <li>
+                                <input type="password" id="user_pw" placeholder="비밀번호"> 
+                            </li>
+                            <li>
+                                <label>
+                                <input type="checkbox" name="tab">
+                                아이디 저장</label>
+                                <label>
+                                <input type="checkbox" name="tab1">
+                                로그인 상태 유지</label>
+                                <span><a href="#" class="id_12">아이디찾기</a></span>
+                                <span> <a href="#" class="id_12">비밀번호찾기</a></span>
+                            </li>
+                            <li>
+                                <button>로그인</button>
+                            </li>
+                            <!-- <button class="close">닫기</button> -->
+                    </ul>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="join">
+        <div class="modal_join"></div>
+        <div class="modal_inner join_modal">
+            <div class="tit">
+              <div class="tit3">로그인</div>
+              <div class="tit4">회원가입</div>
+            </div>
+            <div class="con">
+                <div class="join_con">
+                        <legend class="join_head">휴대폰 | 이메일 아이디 회원가입</legend>
+                    <form action="#">
+                        <ul>
+                            <li>
+                                <input type="text" id="user_id" placeholder="이메일 또는 휴대폰 아이디"> 
+                            </li>
+                            <li>
+                                <input type="password" id="user_pw" placeholder="비밀번호"> 
+                            </li>
+                            <li>
+                                <label for="tab">
+                                    <input type="checkbox" id="tab">
+                                    전체동의<br></label>
+                                <label>
+                                <input type="checkbox" id="tab">
+                                이용약관[필수]</label>
+                                <label>
+                                <input type="checkbox" id="tab">
+                                개인정보처리방침[필수]</label>
+                                <label>
+                                <input type="checkbox" id="tab">
+                                자동로그인[선택]</label>
+                            </li>
+                            <li>
+                                <button>회원가입</button>
+                            </li>
+                            <!-- <button class="close">닫기</button> -->
+                    </ul>
+                </form>
+                </div>
+            </div>
+    </div>
+    </div>
+    <!-- 모달레이어 끝 -->
+    <!-- 메뉴 픽스 및 헤더 -->
+    <div class="fixed">
+    <header id="header">
+        <!-- 로고 -->
+        <div id="logo">
+            <a href="#">
+                <h1><img src="img/logo.png" alt="logo"></h1>
+            </a>
+        </div>
+        <!-- 로고 끝 -->
+        <!-- 메뉴 -->
+        <div id="gnb">
+            <ul>
+                <li class="list_items"><a href="#">서비스 소개</a></li>
+                <li class="list_items"><a href="#">이사 서비스</a></li>
+                <li class="list_items"><a href="#">청소 서비스</a></li>
+                <li class="list_items"><a href="#">이용 후기</a></li>
+                <li class="list_items"><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+        <div id="sub">
+            <ul>
+                <li class="sub_items" id="menu_btn"><img src="img/menu.png" alt="menu"> <br>메뉴</li>
+            </ul>
+            <div class="sub_menu">
+                <div class="sm_head">
+                    <span id="sm_login">로그인</span>
+                    <span id="sm_join">회원가입</span>
+                </div>
+                <div class="content_warp">
+                    <div class="sm_content">마이페이지</div>
+                    <div class="sm_content">충전소</div>
+                    <div class="sm_content">이벤트</div>
+                    <div class="sm_content">고객센터</div>
+                    <div class="sm_content">공지사항</div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- 메뉴 끝 -->
+    </header>
+    <!-- 헤더 끝 -->
+    <!-- 2번째행 배너부분 -->
+    <section id="section_1">
+        <span class="android">
+            <img src="img/android.png" alt="android">
+        </span>
+        <span class="ios">
+            <img src="img/ios.png" alt="ios">
+        </span>
+    </section>
+    <section id="section_2">
+        <div id="s1">
+            <img src="img/section_2.jpg" alt="sevice1">
+        </div>
+        <div id="s2">
+            <img src="img/section_3.jpg" alt="sevice2">
+        </div>
+        <div id="s3">
+            <img src="img/section_4.jpg" alt="sevice3">
+        </div>
+    </section>
+    <!-- 2번째행 배너부분 끝 -->
+    <!-- 3번째행 서비스소개 부분 -->
+    <section class="section_3">
+        <div class="section_3_warp">
+        <div class="bang">방방곡곡?</div>
+        <div class="content">
+        <div id="se1" class="se3_icon">
+            <img src="img/section2_1.png" alt="section2_1">
+            <div class="se3_text">간편한 신청</div>
+        </div>
+        <div class="se_1">▶</div>
+        <div id="se2" class="se3_icon">
+            <img src="img/section2_2.png" alt="section2_2">
+            <div class="se3_text">업계 최고!</div>
+        </div>
+        <div class="se_1">▶</div>
+        <div id="se3" class="se3_icon">
+            <img src="img/section2_3.png" alt="section2_3">
+            <div class="se3_text">안전한 서비스</div>
+        </div>
+        <div class="se_1">▶</div>
+        <div id="se4" class="se3_icon">
+            <img src="img/section2_4.png" alt="section2_4">
+            <div class="se3_text">최고의 서비스</div>
+        </div>
+        <div class="se_1">▶</div>
+        <div id="se5" class="se3_icon">
+            <img src="img/section2_5.png" alt="section2_5">
+            <div class="se3_text">신속한 서비스</div>
+        </div>
+        <div class="se_1">▶</div>
+        <div id="se6" class="se3_icon">
+            <img src="img/section2_6.png" alt="section2_6">
+            <div class="se3_text">업계 최저가</div>
+        </div>
+    </div>
+        <button class="button"><a href="#">자세히 보기</a></button>
+    </div>
+    </section>
+    <!-- 3번째행 서비스 소개 부분 끝 -->
+    <!-- 4번째행 고객센터 및 상담신청 부분 -->
+    <section class="section_4">
+        <article class="art1"><img src="img/section4.png" alt="g"></article>
+        <article class="art2">
+            <h2>24시간 빠른 상담 신청</h2>
+            <div class="box">
+            <form action="">
+                <div>서비스종류
+                    <select>
+                        <option>이사 서비스</option>
+                        <option>청소 서비스</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="name">고객명</label>
+                    <input type="text"id="name">
+                </div>
+                <div>
+                    <label for="hp">휴대폰</label>
+                    <input type="text" name="" id="hp">
+                </div>
+                <div>
+                    <label for="start">이사일</label>
+                    <input type="text" id="start">
+                </div>
+                <div>
+                    <label for="first">출발지</label>
+                    <input type="text" id="first">
+                </div>
+                <div>
+                    <label for="end">도착지</label>
+                    <input type="text" id="end">
+                </div>
+                <div>개인청보처리방침
+                    <input type="radio" name="tab" id="agree">
+                    <label for="agree">동의함</label>
+                    <input type="radio" name="tab" id="noagree">
+                    <label for="noagree">동의하지않음</label>
+                </div>
+                <button>상담신청</button>
+            </form>
+        </div>
+        </article>
+    </section>
+     <!-- 4번째행 고객센터 및 상담신청 부분 끝 -->
+     <!-- 5번째행 공지사항 및 이벤트 슬라이드배너 -->
+    <section class="section_5">
+        <section class="section_5_1">
+        <article class="notice">
+            <div class="first_line">
+                <span>공지사항</span>
+                <span><a href="#">+</a></span>
+            </div>
+            <div class="notice_content">
+                <div class="content">
+                    <span class="head"> - [이벤트] 후기쓰고 치킨 쏜닭!</span>
+                    <span class="time">2020-06-04</span>
+                </div>
+                <div class="content">
+                    <span class="head"> - [이벤트] 후기쓰고 치킨 쏜닭!</span>
+                    <span class="time">2020-06-04</span>
+                </div>
+                <div class="content">
+                    <span class="head"> - [이벤트] 후기쓰고 치킨 쏜닭!</span>
+                    <span class="time">2020-06-04</span>
+                </div>
+                <div class="content">
+                    <span class="head"> - [이벤트] 후기쓰고 치킨 쏜닭!</span>
+                    <span class="time">2020-06-04</span>
+                </div>
+                <div class="content">
+                    <span class="head"> - [이벤트] 후기쓰고 치킨 쏜닭!</span>
+                    <span class="time">2020-06-04</span>
+                </div>
+                <div class="content">
+                    <span class="head"> - [이벤트] 후기쓰고 치킨 쏜닭!</span>
+                    <span class="time">2020-06-04</span>
+                </div>
+                <div class="content">
+                    <span class="head"> - [이벤트] 토스 결제시 50%할인!</span>
+                    <span class="time">2020-06-04</span>
+                </div>
+                <div class="content">
+                    <span class="head"> - [이벤트] 토스 결제시 50%할인!</span>
+                    <span class="time">2020-06-04</span>
+                </div>
+            </div>
+        </article>
+        <article class="event">
+            <ul>
+            <li><img src="img/event1.png" alt="chiken"></li>
+            <li><img src="img/event2.png" alt="toss"></li>
+        </ul>
+    </article>
+    </section>
+    <!-- 5번째행 공지사항 및 이벤트 슬라이드배너 끝-->
+    <!-- 6번째행 이용후기 -->
+    <section class="section6_warp">
+        <section class="section6_center">
+            <div class="se6_header">
+                <span>이용후기</span>
+                <span><a href="#">+</a></span>
+            </div>
+            <div class="section6_box hugi1">
+                <div class="text_head">홍길동 기사님 | <span class="star">★★★★</span></div>
+                <div class="text_content">
+                진짜 이사많이 다니면서 잘맞는 기사님 처음이에요!!
+                원하는 것 척척 알아서 해주시고 전날 전화도주시고
+                ...
+                </div>
+            </div>
+            <div class="section6_box hugi2">
+                <div class="text_head">율곡이이 기사님 | <span class="star">★★★</span></div>
+                <div class="text_content">
+                진짜 이사많이 다니면서 잘맞는 기사님 처음이에요!!
+                원하는 것 척척 알아서 해주시고 전날 전화도주시고
+                ...
+                </div>
+            </div>
+            <div class="section6_box hugi3">
+                <div class="text_head">이순신 기사님 | <span class="star">★★</span></div>
+                <div class="text_content">
+                    진짜 이사많이다니면서 잘맞는 기사님 처음이에요!!
+                    원하는 것 척척 알아서 해주시고 전날 전화도주시고
+                    ...
+                </div>
+            </div>
+            <div class="section6_box hugi4">
+                <div class="text_head">퇴계이황 기사님 | <span class="star">★★★★★</span></div>
+                <div class="text_content">
+                진짜 이사많이 다니면서 잘맞는 기사님 처음이에요!!
+                원하는 것 척척 알아서 해주시고 전날 전화도주시고
+                ...
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- 6번째행 이용후기 끝 -->
+    <footer class="footer_warp">
+        <footer class="footer_center">
+            <div class="footer_first">
+                <span><a href="#">이용약관</a></span>
+                <span><a href="#">개인정보처리방침</a></span>
+                <span><a href="#">파손규정</a></span>
+                <span><a href="#">일정변경 및 환불규정</a></span>
+                <span class="f_icon">
+                <span class="footer_icon"><img src="img/kakao.png" alt="kakao"></span>
+                <span class="footer_icon"><img src="img/fb.png" alt="fb"></span>
+                <span class="footer_icon"><img src="img/tw.png" alt="tw"></span>
+                <span class="footer_icon"><img src="img/insta.png" alt="insta"></span>
+            </span>
+            </div>
+            <div class="footer_second">
+                <span>주식회사 방방곡곡</span>
+                <span>대표자 : 강경원</span>
+                <span>주소 : 서울특별시 서초구 강남대로 279,5층 (서초동,백향빌딩)</span>
+                <span>고객센터 : 1644-QWER</span>
+                <span>사업자등록번호 : 513-8700088</span>
+                <span>통신판매신고번호 : 2018-서울서초-1234</span>
+            </div>
+            <div class="footer_third">
+                농협 1234567-1234-123456 주식회사 방방곡곡
+            </div>
+            <div class="footer_copylight">
+                COPYRIGHT ⓒ 2020 BANGBANG GOKGOK CORP.
+            </div>
+        </footer>
+    </footer>
+</body>
+</html>

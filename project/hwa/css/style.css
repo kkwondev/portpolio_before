@@ -1,0 +1,280 @@
+/* 메인페이지 css */
+.loadingbox .dim {
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255,0.9);
+    z-index: 999;
+}
+.loadingbox .circle {
+    position: fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    height: 40px;
+    border: 10px solid #fff;
+   border-top:10px solid #f8b03a;
+   border-radius: 50px;
+   animation-name: spincircle;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   z-index: 999;
+}
+@keyframes spincircle {
+    from {
+        transform:translate(-50%,-50%) rotate(0);
+    }
+    to {
+        transform:translate(-50%,-50%) rotate(360deg);
+    }
+}
+.red {
+    border-radius: 5px;
+    background-color: #f8b03a;
+    font-weight: bold;
+    padding:5px;
+    color:#fff;
+}
+.orange {
+    border-radius: 5px;
+    background-color:#dc6721;
+    font-weight: bold;
+    padding:5px;
+    color:#fff;
+}
+.wrap> .main_banner {
+    clear: both;
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/main_banner.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    max-width: 1920px;
+    position: relative;
+}
+.wrap> .main_banner > .font_wrap {
+    width: 1138px;
+    height: 650px;
+    margin:0 auto;
+    text-align: center;
+    position: relative;
+}
+.wrap> .main_banner> .font_wrap> .big {
+    font-size: 55px;
+    position: absolute;
+    top:50%;
+    left:52%;
+    transform: translateY(-100px);
+    letter-spacing: -0.0625em;
+    animation-name: font_ani1;
+    animation-duration: 2s;
+    animation-delay:1.5s;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+}
+.wrap> .main_banner>.font_wrap> .normal {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 27px;
+    position: absolute;
+    top:60%;
+    left:42%;
+    transform: translateY(-70px);
+    animation-name: font_ani2;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    transition-timing-function: ease;
+}
+.wrap> .main_banner> .normal> strong {
+    font-weight: 400;
+}
+.wrap> .section_second {
+    width: 1138px;
+    height: 675px;
+    margin: 0 auto;
+    padding-top: 160px;
+    box-sizing: border-box;
+    position: relative;
+}
+.wrap> .section_second > h2 {
+    width: 250px;
+    position: absolute;
+    top:64px;
+    left:50%;
+    transform: translateX(-50%);
+    border-bottom: 2px solid #f8b03a;
+}
+.wrap> .section_second > h2 > img {
+    width: 100%;
+    height: 100%;
+}
+.wrap> .section_second> article {
+    width: 50%;
+    height: 385px;
+    float: left;
+}
+.wrap> .section_second> .box1 {
+    background-image: url(../img/section2_article.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+.wrap> .section_second> .box1 > img {
+    width: 125%;
+    position: absolute;
+    top:50%;
+    transform: translate(-18%, -50%);
+}
+.wrap> .section_second> .box2 {
+    background-color: #f8b03a;
+    position: relative;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.wrap> .section_second> .box2 >.contents {
+    width: 100%;
+    padding: 100px 120px;
+}
+.wrap> .section_second> .box2 >.contents > img {
+    display: block;
+    width: 150px;
+    float: left;
+    margin-right: 19px;
+    position: absolute;
+    top:50px;
+    right:30px;
+}
+.wrap> .section_second> .box2>.contents > h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.wrap> .section_second> .box2>.contents > h2 {
+    font-size: 40px;
+    position: absolute;
+}
+.wrap> .section_second> .box2>.contents > p {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 18px;
+    font-size:16px;
+    margin-bottom: 5px;
+}
+.wrap> .section_second> .box2>.contents > p.last {
+    margin-bottom: 8px;
+}
+.wrap> .section_second> .box2> .box2_1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+    text-align: center;
+    height: 96px;
+    line-height: 96px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    font-size: 24px;
+    position: absolute;
+    bottom: 0;
+    clear: both;
+}
+.wrap> .section_second> .box2> .box2_1 > a {
+    color:#f8b03a;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all 0.3s;
+}
+.wrap> .section_second> .box2> .box2_1 > a:hover {
+    background-color: rgba(248, 176, 58, 0.5);
+    color: #fff;
+}
+.wrap > .section_third {
+    clear: both;
+    width: 100%;
+    height: 491px;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url(../img/section_3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 37px;
+    text-align: center;
+}
+.wrap > .section_third > h2 {
+    color: #fff;
+    height: 40px;
+    display: inline-block;
+    font-size: 30px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 43px;
+    text-shadow: 5px 5px 10px gray;
+}
+.wrap > .section_third > .contents {
+    width: 1138px;
+    height: 330px !important;
+    margin:0 auto;
+    overflow: hidden;
+    position: relative;
+    top:0;
+}
+.wrap > .section_third > .contents> ul {
+    position: absolute;
+    top:0;
+    margin:0;
+    padding:0;
+}
+.wrap > .section_third > .contents> ul > li#open_place {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 15px !important;
+
+
+}
+.wrap > .section_third > .contents> ul > li > div {
+    float: left;
+    height: 70px;
+    line-height: 70px;
+}
+.wrap > .section_third > .contents> ul > li > div:last-child {
+    border-right: none;
+}
+.wrap > .section_third > .contents> ul > li > div.name {
+    width: 219px;
+    font-size: 18px;
+    margin-left: 22px;
+}
+.wrap > .section_third > .contents> ul > li > div.name > img {
+    width: 80%;
+    display: block;
+    /* text-align: right; */
+    padding-top: 10px;
+    line-height: 80px;
+}
+
+
+.wrap > .section_third > .contents> ul > li > div.name2 {
+    color: #333;
+    width: 210px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.wrap > .section_third > .contents> ul > li > .address {
+    width: 322px;
+    font-weight: normal;
+}
+.wrap > .section_third > .contents> ul > li > .tel {
+    width: 120px;
+}
+.wrap > .section_third > .contents> ul > li > .address > span {
+    display: inline-block;
+    margin-left: 20px;
+}
+.wrap > .section_third > .contents> ul > li >.open {
+    width: 244px;
+}
+

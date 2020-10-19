@@ -1,0 +1,111 @@
+#wrap > .first {
+    width: 100%;
+    height: 270px;
+    padding-top: 70px;
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top center;
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+}
+#wrap > .first::before {
+    content: '';
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+#wrap > .first > h2 {
+    position: absolute;
+    top:53%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+#wrap > .first_content {
+    width: 100%;
+    padding:30px 16px;
+    box-sizing: border-box;
+}
+#wrap > .first_content > .head {
+    height: 50px;
+    background-color: #A6704E;
+    color:#fff;
+    padding:12px 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+#wrap > .first_content > .head > span {
+    transform: translateY(-50%);
+}
+#wrap > .first_content > .head > .head {
+    position: absolute;
+    top:50%;
+    left:16px;
+}
+#wrap > .first_content > .head > .content {
+    position: absolute;
+    top:50%;
+    left:47%;
+}
+#wrap > .first_content > .head > .end {
+    position: absolute;
+    top:50%;
+    right:16px;
+}
+.first_content > .notice_content {
+    margin-bottom: 50px;
+}
+.first_content > .notice_content > .c_wrap .content2 {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #eee;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+}
+.first_content > .notice_content >.c_wrap >.content_wrap  {
+    position: relative;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.first_content > .notice_content >.c_wrap > .content_wrap > .head {
+    color: #A6704E;
+    font-weight: bold;
+    position: absolute;
+    top:50%;
+    left:16px;
+    transform: translateY(-50%);
+}
+.first_content > .notice_content >.c_wrap > .content_wrap > .content_notice {
+    position: absolute;
+    top:50%;
+    left:47%;
+    transform: translate(-42%,-50%);
+    font-weight: bold;
+}
+.first_content > .notice_content > .c_wrap >.content_wrap > .end {
+    position: absolute;
+    top:50%;
+    right:10px;
+    transform: translateY(-50%);
+    color: #999;
+}
+.first_content > .prev_next {
+    width: 100%;
+    text-align: center;
+}
+.first_content > .prev_next> button {
+    outline: none;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}

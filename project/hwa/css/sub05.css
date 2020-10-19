@@ -1,0 +1,68 @@
+.wrap > .sub_menu > ul > li.intro {
+    width: 120px;
+    margin-left: 450px;
+}
+.wrap > .sub_menu > ul > li.sub2 {
+    width: 120px;
+    border-right: none;
+}
+.wrap > .section_content {
+    width: 1138px;
+    margin:0 auto;
+    padding: 100px 0;
+    margin-bottom: 80px;
+    box-sizing: border-box;
+    display: none;
+}
+.wrap > .section_content.on {
+    display: block;
+    transform: scaleY(1);
+}
+.wrap > .section_content > .title {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #f8b03a;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}
+.wrap > .section_content > .content > table > tr > #title_left {
+    text-align: left !important;
+}
+table {
+    width: 100%;
+    border:1px solid #ccc;
+}
+tr,td,th {
+    text-align: center;
+    height: 50px;
+    padding:0px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.wrap > .section_content > .content1 {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+}
+.wrap > .section_content > .content1:hover> span {
+    /* transform: scaleY(-1); */
+}
+.wrap > .section_content > .content1 > span {
+    position: absolute;
+    right: 20px;
+}
+.wrap > .section_content > .content_body {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: none;
+    /* text-align: center; */
+}

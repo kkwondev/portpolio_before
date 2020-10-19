@@ -1,0 +1,174 @@
+#wrap > .first {
+    width: 100%;
+    height: 270px;
+    padding-top: 70px;
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top center;
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+}
+#wrap > .first::before {
+    content: '';
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+#wrap > .first > h2 {
+    position: absolute;
+    top:53%;
+    left:50%;
+    transform: translateX(-50%);
+}
+#wrap > .content {
+    width: 100%;
+    padding:30px 16px;
+    box-sizing: border-box;
+    /* background-color: royalblue; */
+}
+#wrap > .content > .map {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#wrap > .content >.map > h2 {
+    margin-bottom: 10px;
+}
+#wrap > .content >.map > .mapbox {
+    display: block;
+    float: left;
+    width:50%;
+    height: 80px;
+    line-height: 80px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding:10px;
+    /* float: left; */
+    color: #fff;
+    font-weight: bold;
+}
+#wrap > .content >.map > .mapbox.naver {
+    background-color: #3563B0;
+}
+#wrap > .content >.map > .mapbox.naver::before {
+    content: url(../img/naver.png);
+}
+#wrap > .content >.map > .mapbox.kakao {
+    background-color: #FBE300;
+}
+#wrap > .content >.map > .mapbox.kakao::before {
+    content: url(../img/kakao.png);
+}
+#wrap > .content >.map > img {
+    width: 100%;
+}
+
+#wrap > .content >.visit {
+    clear: both;
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+#wrap > .content >article > h3 {
+    height: 40px;
+    line-height: 40px;
+    color: #5C3D33;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#wrap > .content >article > h3::before {
+    content: '';
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 8px;
+    height: 40px;
+    background-color: #5C3D33;
+}
+#wrap > .content >.visit > p {
+    color: #5C3D33;
+    margin-bottom: 5px;
+}
+
+#wrap > .content> .floor {
+    width: 100%;
+}
+#wrap > .content> .floor > .floor_menu {
+    clear: both;
+    cursor: pointer;
+    width: 100%;
+    height: 44px;
+}
+#wrap > .content> .floor > .floor_menu > li {
+    float: left;
+    width: 25%;
+    height: 44px;
+    line-height: 44px;
+    font-size: 20px;
+    color: #5C3D33;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#wrap > .content> .floor > .floor_menu > li.on {
+    border-bottom: 5px solid #5C3D33;
+}
+#wrap > .content> .floor > .floor_content {
+    clear: both;
+    text-align: center;
+    padding:20px 0;
+    display: none;
+    margin-bottom: 50px;
+}
+#wrap > .content> .floor > .floor_content.on {
+    display: block;
+}
+#wrap > .content> .floor > .floor_content > span {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#wrap > .content > .last {
+    width: 100%;
+    margin:0 auto;
+   
+}
+#wrap > .content > .last > .pictogram {
+    /* background-color: aqua; */
+    width: 100%;
+    height:100px;
+    padding:10px;
+    position: relative;
+    border-bottom: 1px dashed #ccc;
+}
+#wrap > .content > .last > .pictogram.first {
+    border-top: 2px solid #eee;
+}
+#wrap > .content > .last > .pictogram > span:first-child {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    /* line-height: 100px; */
+}
+#wrap > .content > .last > .pictogram > span.text {
+    position: absolute;
+    width: 245px;
+    top:50%;
+    left:80px;
+    transform: translateY(-50%);    
+}
+#wrap > .content > .last > .pictogram > span > img {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+}

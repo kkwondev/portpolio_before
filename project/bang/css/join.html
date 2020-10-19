@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        ul {
+            list-style: none;
+        }
+    .modal_login {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0, 0, 0.1);
+    z-index: 100;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+.modal_login>.modal_inner {
+    background-color: #fff;
+    width: 500px;
+    height: 380px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+}
+.modal_login>.modal_inner > .tit {
+    /* background-color: royalblue; */
+    height: 50px;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    
+}
+.tit > .tit1 {
+    float: left;
+    width: 250px;
+    height: 50px;
+    background-color: #fff;
+    color:#7cc8fa;
+    border-left: 2px solid #7cc8fa;
+    border-top: 2px solid #7cc8fa;
+    border-right: 2px solid #7cc8fa;
+    box-sizing: border-box;
+    border-radius:8px 8px 0 0;
+    font-weight: bold;
+
+}
+.tit>.tit2 {
+    float: left;
+    width: 250px;
+    height: 50px;
+    background-color: #7cc8fa;
+    color:#fff;
+    border-radius:5px 5px 0 0 ;
+}
+
+.modal_login>.modal_inner > .con {
+    /* background-color: salmon; */
+    height: 400px;
+    padding:40px 30px;
+    box-sizing: border-box;
+}
+
+.modal_login>.modal_inner > .con > .login_con {
+    clear: both;
+}
+.modal_login>.modal_inner > .con > .login_con>.login_head {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.modal_login>.modal_inner > .con > .login_con>form> ul >li {
+    margin-bottom: 15px;
+}
+.modal_login>.modal_inner > .con > .login_con>form> ul >li > input {
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left:10px;
+    box-sizing: border-box;
+    outline: none;
+}
+.modal_login>.modal_inner > .con > .login_con>form> ul >li > input::placeholder {
+    color:#666;
+}
+.modal_login>.modal_inner > .con > .login_con>form> ul >li > input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+}
+.modal_login>.modal_inner > .con > .login_con>form> ul >li > label {
+    font-size: 13px;
+}
+.modal_login>.modal_inner > .con > .login_con>form> ul >li > button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7cc8fa;
+    font-size: 18px;
+    color: #fff;
+}
+.modal_login>.modal_inner > .con > .login_con>form> ul >li >span:first-of-type {
+    margin-left: 65px;
+}
+.modal_login>.modal_inner > .con > .login_con>form> ul >li >span> a {
+    padding:3px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #000;
+    font-size: 12px;
+    text-decoration: none;
+}
+.modal_login>.modal_inner > .con > .login_con>form> ul >li > .id_12:first-child {
+    margin-left: 50px;
+}
+/* 조인 css */
+.modal_join {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0, 0, 0.1);
+    z-index: 100;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    /* display: none; */
+}
+.modal_join>.modal_inner {
+    background-color: #fff;
+    width: 500px;
+    height: 410px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+}
+.modal_join>.modal_inner > .tit {
+    /* background-color: royalblue; */
+    height: 50px;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    
+}
+.tit > .tit2 {
+    float: left;
+    width: 250px;
+    height: 50px;
+    background-color: #fff;
+    color:#7cc8fa;
+    border-left: 2px solid #7cc8fa;
+    border-top: 2px solid #7cc8fa;
+    border-right: 2px solid #7cc8fa;
+    box-sizing: border-box;
+    border-radius:8px 8px 0 0;
+    font-weight: bold;
+
+}
+.tit>.tit1 {
+    float: left;
+    width: 250px;
+    height: 50px;
+    background-color: #7cc8fa;
+    color:#fff;
+    border-radius:5px 5px 0 0 ;
+}
+
+.modal_join>.modal_inner > .con {
+    /* background-color: salmon; */
+    height: 400px;
+    padding:40px 30px;
+    box-sizing: border-box;
+}
+.modal_join>.modal_inner > .con > .join_con>.join_head {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.modal_join>.modal_inner > .con > .join_con>form> ul >li {
+    margin-bottom: 15px;
+}
+.modal_join>.modal_inner > .con > .join_con>form> ul >li > input {
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left:10px;
+    box-sizing: border-box;
+    outline: none;
+}
+.modal_join>.modal_inner > .con > .join_con>form> ul >li > input::placeholder {
+    color:#666;
+}
+.modal_join>.modal_inner > .con > .join_con>form> ul >li > input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+}
+.modal_join>.modal_inner > .con > .join_con>form> ul >li > label {
+    font-size: 13px;
+    margin-right: 17px;
+}
+.modal_join>.modal_inner > .con > .join_con>form> ul >li > button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7cc8fa;
+    font-size: 18px;
+    color: #fff;
+}
+.modal_join>.modal_inner > .con > .join_con>form> ul >li >span:first-of-type {
+    margin-left: 65px;
+}
+.modal_join>.modal_inner > .con > .join_con>form> ul >li >span> a {
+    padding:3px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #000;
+    font-size: 12px;
+    text-decoration: none;
+}
+.modal_join>.modal_inner > .con > .join_con>form> ul >li > .id_12:first-child {
+    margin-left: 50px;
+}
+.close {
+    float: right;
+    width: 50px;
+    padding:4px;
+    border:1px solid #ccc;
+    background-color: #fff;
+    outline: none;
+}
+    </style>
+    <script>
+        $(function(){
+            $(".tit1").click(function(){
+                $(".modal_login").show();
+                $(".modal_join").hide();
+            })
+            $(".tit2").click(function(){
+                $(".modal_login").hide();
+                $(".modal_join").show();
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="modal_login">
+        <div class="modal_inner">
+            <div class="tit">
+              <div class="tit1">로그인</div>
+              <div class="tit2">회원가입</div>
+            </div>
+            <div class="con">
+                <div class="login_con">
+                        <legend class="join_head">휴대폰 | 이메일 아이디 로그인</legend>
+                    <form action="#">
+                        <ul>
+                            <li>
+                                <input type="text" id="user_id" placeholder="이메일 또는 휴대폰 아이디"> 
+                            </li>
+                            <li>
+                                <input type="password" id="user_pw" placeholder="비밀번호"> 
+                            </li>
+                            <li>
+                                <input type="checkbox" id="id_jujang" >
+                                <label for="jd_jujang">아이디 저장</label>
+                                <input type="checkbox" id="login_youji" >
+                                <label for="jd_youji">로그인 상태 유지</label>
+                                <span><a href="#" class="id_12">아이디찾기</a></span>
+                                <span> <a href="#" class="id_12">비밀번호찾기</a></span>
+                            </li>
+                            <li>
+                                <button>로그인</button>
+                            </li>
+                    </ul>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal_join">
+        <div class="modal_inner">
+            <div class="tit">
+              <div class="tit1">로그인</div>
+              <div class="tit2">회원가입</div>
+            </div>
+            <div class="con">
+                <div class="join_con">
+                        <legend class="join_head">휴대폰 | 이메일 아이디 회원가입</legend>
+                    <form action="#">
+                        <ul>
+                            <li>
+                                <input type="text" id="user_id" placeholder="이메일 또는 휴대폰 아이디"> 
+                            </li>
+                            <li>
+                                <input type="password" id="user_pw" placeholder="비밀번호"> 
+                            </li>
+                            <li>
+                                <label for="tab">
+                                    <input type="checkbox" id="tab">
+                                    전체동의<br></label>
+                                <label>
+                                <input type="checkbox" id="tab">
+                                이용약관[필수]</label>
+                                <label>
+                                <input type="checkbox" id="tab">
+                                개인정보처리방침[필수]</label>
+                                <label>
+                                <input type="checkbox" id="tab">
+                                자동로그인[선택]</label>
+                            </li>
+                            <li>
+                                <button>회원가입</button>
+                            </li>
+                            <button class="close">닫기</button>
+                    </ul>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
